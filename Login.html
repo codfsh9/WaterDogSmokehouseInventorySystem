@@ -1,40 +1,63 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
-<meta content="en-us" http-equiv="Content-Language" />
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
 <style type="text/css">
-.auto-style1 {
-	text-align: center;
-	margin-left: 0px;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.box-style {
+	width: 350px; 
+	height: 300px; 
+	display: block;
+	border:black solid; 
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color:white;
+	margin-left: 550px;
+	margin-right: auto;
 }
-.auto-style2 {
-	margin-left: 700px;
+.form-style {
+	width: 1000px;
+	height: 500px;
+	padding: 20px;
+	margin-left: 145px;
+}
+.text-style{
+	font-size: larger;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding-top: 15px;
+	padding-left: 40px;
+	padding-right: auto;
+}
+.button-style{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 12px;
+	padding-right: 12px;
 	margin-top: 20px;
+	margin-left: 5px;
 }
-.auto-style3 {
-	margin-right: 0px;
-}
+
 </style>
 </head>
 
-<body style="width: 1091px; height: 378px">
+<body style="width: 700px; height: 350px; padding:10px; background-color:#33475b;">
+	
+	<h1>
+		<img style="width: 310px; height: 225px; margin-left: 750px; margin-right: auto;" 
+		src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" />
+	</h1>
+	<form action="Login.php" method="post" class="form-style">
+		<div class="box-style">
+			<p class="text-style"> 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username:<br/>
+				<input name="username" type="text" style="margin-left: 45px;"/><br/><br/><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:<br/>
+				<input name="password" type="password" style="margin-left: 45px;"/><br/><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input name="EXIT" onclick="window.close();" class="button-style" type="button" value="Exit" />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input name="LOGIN" type="submit" value="Login" class="button-style" />
+			</p>
+		</div>
+	</form>
 
-<h1 class="auto-style1" style="width: 375px; margin-left: 600px; height: 90px;">
-Water Dog Smokehouse Inventory Management</h1>
-<form action="Login.php" method="post" style="height: 256px">
-	<p class="auto-style2">Username:<br />
-	<input name="username" type="text" /><br />
-	<br />
-	Password:<br />
-	<input name="password" type="password" /><br />
-	<br />
-	<input name="LOGIN" type="submit" value="Login" style="width: 50px" />
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="EXIT" onclick="window.close();" 
-	style="width: 50px" type="button" value="Exit" class="auto-style3" /></p>
-</form>
 
 </body>
 
