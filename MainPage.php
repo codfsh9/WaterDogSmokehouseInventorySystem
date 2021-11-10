@@ -11,9 +11,8 @@
 
 	<body>
 
-	<form action="Dashboard.php" method="post">
+	<form action="AddInv.php" method="post">
 		<div class="auto-style1">
-			
 			<input name="AddInv" type="submit" value="Add Inventory"><br><br><br>
 			<input name="ViewSupp" type="button" value="Supplier Information">
 		</div>
