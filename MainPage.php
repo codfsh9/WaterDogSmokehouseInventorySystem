@@ -15,10 +15,11 @@
 		<div class="auto-style1">
 			
 			<input name="DispDash" type="submit" value="Dashboard"><br><br><br>
-			<input name="AddInv" type="button" value="Add Inventory"><br><br>
+			<input name="AddInv" type="submit" value="Add Inventory"><br><br>
 			<br><input name="RemInv" type="button" value="Remove Inventory"><br>
 			<br><br>
 			<input name="ViewSupp" type="button" value="Supplier Information"></div>
+			
 	</form>
 
 	</body>
