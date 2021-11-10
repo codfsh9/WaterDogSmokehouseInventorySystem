@@ -35,7 +35,7 @@
 			if (!isset($_SESSION['row'])) {  
 	
     		$_SESSION['row'] = $row;        
-    		header("location: MainPage.php");
+    		header("location: MainPage.html");
 			}
 
 	
