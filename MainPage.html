@@ -2,38 +2,50 @@
 	
 	<head>
 	<style type="text/css">
-	.auto-style1 {
-		text-align: left;
-		margin-top: 40px;
+	.div-style {
+		margin-top: 25px;
+		margin-left: 20px;
 	}
-	.auto-style2 {
+	
+	.button-style {
+		padding: 15px;
 		text-align: center;
-		margin-top: 40px;
+		border: black solid;
 	}
-	.auto-style3 {
-		text-align: right;
-		margin-top: 40px;
+	.text-style{
+	font-size: larger;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding-top: 15px;
+	padding-left: 40px;
+	padding-right: auto;
 	}
+
 	</style>
 	</head>
 
-	<body>
+	<body style="width: 700px; height: 350px; padding:10px; background-color:#33475b;"></body>
 	
 	<form action="AddInv.php" method="post">
-		<div class="auto-style1">
-			<input name="AddInv" type="submit" value="Add Inventory"><br><br><br>
+		<div class="div-style">
+			<p class="text-style"> 
+				<input name="AddInv" type="submit" value="Add Inventory" class="button-style"><br><br>
+			</p>
 		</div>
 	</form>
 
 	<form action="RemInv.php" method="post">
-		<div class="auto-style2">
-			<input name="RemInv" type="submit" value="Remove Inventory"><br><br><br>
+		<div class="div-style">
+			<p class="text-style">
+				<input name="RemInv" type="submit" value="Remove Inventory" class="button-style"><br><br>
+		</p>
 		</div>
 	</form>
 
 	<form action="ViewSupp.php" method="post">
-		<div class="auto-style3">
-			<input name="ViewSupp" type="submit" value="Supplier Information"><br><br><br>
+		<div class="div-style">
+			<p class="text-style">
+			<input name="ViewSupp" type="submit" value="Supplier Information" class="button-style"><br><br>
+		</p>
 		</div>
 	</form>
 
