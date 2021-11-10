@@ -14,13 +14,15 @@
 	<form action="Dashboard.php" method="post">
 		<div class="auto-style1">
 			
-			<input name="DispDash" type="submit" value="Dashboard"><br><br><br>
-			<input name="AddInv" type="submit" value="Add Inventory"><br><br>
-			<br><input name="RemInv" type="button" value="Remove Inventory"><br>
-			<br><br>
-			<input name="ViewSupp" type="button" value="Supplier Information"></div>
-			
+			<input name="AddInv" type="submit" value="Add Inventory"><br><br><br>
+			<input name="ViewSupp" type="button" value="Supplier Information">
+		</div>
 	</form>
 
+	<form action "RemInv.php" method="post">
+		<div class="auto-style1">
+			<input name="RemInv" type="submit" value="Remove Inventory"><br><br><br>
+		</div>
+	</form>
 	</body>
 </html>
