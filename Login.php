@@ -2,12 +2,9 @@
 	<body>
 
 		<?php
-		$servername = "127.0.0.1";
+		$servername = "localhost";
 		$username = "root";
-		$password = "root";
 		$dbname = "inventory";
-
-
 
 		$myusername = $_POST["username"];
 		$mypassword= $_POST["password"];
