@@ -98,6 +98,7 @@
 				<th>Name</th>
 				<th>Description</th>
 				<th>Quantity</th>
+				<th>Quantity Max</th>
 			</tr>
 		<?php
 			$conn=mysqli_connect("localhost","root","root","inventory");
