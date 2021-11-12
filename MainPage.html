@@ -31,12 +31,14 @@
 	
 	</head>
 
-	<body style="width: auto; height: 350px; padding: 10px; background-color: #33475b; text-align: center;"></body>
+	<body style="width: auto; height: 350px; padding: 10px; background-color: #33475b; 
+		text-align: center;"></body>
 	
 	<form action="AddInv.html" method="post">
 		<div class="div-style">
 			<p class="text-style"> 
-				<input name="AddInv" type="submit" value="Add Inventory" class="button-style"><br><br>
+				<input name="AddInv" onclick="window.location.href='http://localhost/AddInv.html'" 
+					class="button-style" type="button" value="Add Inventory"><br><br>
 			</p>
 		</div>
 	</form>
@@ -44,7 +46,8 @@
 	<form action="RemInv.html" method="post">
 		<div class="div-style">
 			<p class="text-style">
-				<input name="RemInv" type="submit" value="Remove Inventory" class="button-style"><br><br>
+				<input name="RemInv" onclick="window.location.href='http://localhost/RemInv.html'" 
+					type="button" class="button-style" value="Remove Inventory"><br><br>
 		</p>
 		</div>
 	</form>
@@ -52,7 +55,8 @@
 	<form action="ViewSupp.html" method="post">
 		<div class="div-style">
 			<p class="text-style">
-			<input name="ViewSupp" type="submit" value="Supplier Information" class="button-style"><br><br>
+			<input name="ViewSupp" onclick="window.location.href='http://localhost/ViewSupp.html'" 
+				class="button-style" type="button" value="Supplier Information"><br><br>
 		</p>
 		</div>
 		
