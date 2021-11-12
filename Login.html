@@ -10,35 +10,37 @@
 	border:black solid; 
 	padding:5px;
 	background-color:white;
-	margin-left: 75%;
+	margin-left: auto;
 	margin-right: auto;
 }
 .form-style {
 	width: 750px;
 	height: 300px;
 	padding: 20px;
-	margin-left: 145px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .text-style{
 	font-size: larger;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	padding-top: 15px;
-	padding-left: 40px;
+	padding-left: auto;
 	padding-right: auto;
 }
 .button-style{
 	padding-top: 7px;
 	padding-bottom: 7px;
-	padding-left: 12px;
-	padding-right: 12px;
+	padding-left: auto;
+	padding-right: auto;
 	margin-top: 20px;
 	margin-left: auto;
+	margin-right: auto;
 	cursor: pointer;
 }
 .img-style{
 	width: 310px; 
 	height: 220px;
-	margin-left: 100%;
+	margin-left: auto;
 	margin-right: auto;
 }
 </style>
@@ -52,14 +54,14 @@
 	<form action="Login.php" method="post" class="form-style">
 		<div class="box-style">
 			<p class="text-style"> 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username:<br/>
-				<input name="username" type="text" style="margin-left: 45px;"/><br/><br/><br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:<br/>
-				<input name="password" type="password" style="margin-left: 45px;"/><br/><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username:<br>
+				<input name="username" type="text" class="text-style"><br><br><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:<br>
+				<input name="password" type="password" class="text-style"><br><br>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input name="EXIT" onclick="window.close();" class="button-style" type="button" value="Exit" />
+				<input name="EXIT" onclick="window.close();" class="button-style" type="button" value="Exit">
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<input name="LOGIN" type="submit" value="Login" class="button-style" />
+				<input name="LOGIN" type="submit" value="Login" class="button-style">
 			</p>
 		</div>
 	</form>

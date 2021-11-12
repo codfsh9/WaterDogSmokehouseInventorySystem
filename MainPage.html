@@ -19,43 +19,32 @@
 	
 	.text-style
 	{
-    font-size: larger;
+    font-size: xx-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 15px;
-    padding-left: 40px;
+    padding-left: auto;
     padding-right: auto;
     width: auto;
+    text-align:center;
 	}
 
 	</style>
 	
 	</head>
 
-	<body style="width: auto; height: 350px; padding: 10px; background-color: #33475b; 
-		text-align: center;"></body>
-	
-	<form action="AddInv.php" method="post">
-		<div class="div-style">
-			<p class="text-style">
-				<input name="AddInv" type="submit" class="button-style" value="Add Inventory"><br><br>
-		</p>
-		</div>
-	</form>
-
-	<form action="RemInv.html" method="post">
-		<div class="div-style">
-			<p class="text-style">
-				<input name="RemInv" type="submit" class="button-style" value="Remove Inventory"><br><br>
-		</p>
-		</div>
-	</form>
-
-	<form action="ViewSupp.html" method="post">
-		<div class="div-style">
-			<p class="text-style">
-			<input name="ViewSupp" class="button-style" type="submit" value="Supplier Information"><br><br>
-		</p>
-		</div>
-		
-	</form>	
+	<body style="background-color:#33475b;">
+	<h1 class="text-style">Dashboard</h1>
+    	<br>
+    	<p>
+        	<button onclick="window.location.href='AddInv.php'" class="button-style">
+       		Add Inventory
+        	</button>
+        	<button onclick="window.location.href='RemInv.html'" class="button-style">
+       		Remove Inventory
+        	</button>
+        	<button onclick="window.location.href='ViewSupp.html'" class="button-style">
+       		Supplier Information
+       		</button>
+    	</p>
+	</body>
 </html>
