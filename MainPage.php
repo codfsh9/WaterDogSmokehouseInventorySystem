@@ -7,18 +7,21 @@
 	{
 		background-color: grey;
 		width: 800px;
-		height: fit-content;
+		height: 80px;
 		display:block;
 		margin-left: auto;
 		margin-right: auto;
-		padding:5px;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-left:15px;
+		padding-right:15px;
 	}
 	
 	.button-style 
 	{
-		padding: 15px;
-		margin-left: 70px;
-		margin-right: 10px;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
 		border: black 2px solid;
 		cursor: pointer;
 	}
@@ -29,39 +32,47 @@
     font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
     text-align:center;
 	}
+
 	table
     {
         border-collapse: separate;
-        width: auto;
-        height: auto;
+        width: 800px;
+        height: 500px;
         padding:10px;
         margin-left: auto;
         margin-right: auto;
         font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
         text-align: left;
     }
+
     th
     {
         background-color: white;
-        font-size: 20px;
+        font-size: large;
+		height: fit-content;
         padding-left:auto;
         padding-right:auto;
         color: black;
     }
+
     tr
     {
         background-color:white;
 		text-align:center;
+		height: fit-content;
         font-size:15px;
-		padding:20px;
+		padding:5px;
     }
+
     tr:nth-child(even)
     {
         background-color:rgb(199, 199, 199);
 		text-align:center;
+		height: fit-content;
         font-size: 15px;
-        padding:20px;
+        padding:10px;
     }
+
     .div-style2
     {
         background-color: #33475b;
