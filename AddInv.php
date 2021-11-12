@@ -47,7 +47,7 @@
 </head>
 
 <body style="background-color:#33475b;">
-<h1 style="text-align: center;">Add Inventory Page</h1>
+<h1 style="font-size: xx-large; text-align: center; color:white;">Add Inventory Page</h1>
     <br>
     <p>
         <button onclick="window.location.href='MainPage.php'">
