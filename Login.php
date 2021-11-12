@@ -4,6 +4,7 @@
 		<?php
 		$servername = "localhost";
 		$username = "root";
+		$password = "root";
 		$dbname = "inventory";
 
 		$myusername = $_POST["username"];

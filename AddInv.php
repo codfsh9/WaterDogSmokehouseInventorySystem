@@ -50,7 +50,7 @@
 <h1 style="text-align: center;">Add Inventory Page</h1>
     <br>
     <p>
-        <button onclick="window.location.href='http://localhost/WebsiteProject/MainPage.html'">
+        <button onclick="window.location.href='MainPage.html'">
         Back to Homepage
         </button>
     </p>
