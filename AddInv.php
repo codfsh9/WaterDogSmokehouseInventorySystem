@@ -54,40 +54,5 @@
         Back to Homepage
         </button>
     </p>
-<div>
-<table>
-    <tr>
-        <th>Ingredient ID</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Quantity</th>
-    </tr>
-<?php
-    $conn=mysqli_connect("localhost","root","root","inventory");
-     // Check connection
-     if (mysqli_connect_errno())
-     {
-     echo "Failed to connect: " . mysqli_connect_error();
-    }
-    
-    $sql = "SELECT * FROM ingredients";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc())
-        {
-            echo "<tr><td>" . $row["ing_id"]. "</td><td>" . $row["ing_name"] . "</td><td>"
-            . $row["ing_desc"]. "</td><td>" . $row["ing_q"] . "</tr></td>";
-        }
-        echo "</table>";
-    }
-    else 
-    {
-        echo "0 RESULTS";
-    }
-    mysqli_close($conn);
-?>
-</table>
-</div>
 </body>
 </html>
