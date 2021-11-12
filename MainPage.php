@@ -115,7 +115,7 @@
 				while($row = $result->fetch_assoc())
 				{
 					echo "<tr><td>" . $row["ing_id"]. "</td><td>" . $row["ing_name"] . "</td><td>"
-					. $row["ing_desc"]. "</td><td>" . $row["ing_q"] . "</td><td>" . $row["ing_q_max"] . "</td></tr>";
+					. $row["ing_desc"]. "</td><td>" . $row["ing_q"] . "</td><td>" . $row["ing_q_max"] . "</tr></td>";
 				}
 				echo "</table>";
 			}
