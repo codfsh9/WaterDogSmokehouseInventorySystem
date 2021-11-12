@@ -6,7 +6,7 @@
 	.div-style 
 	{
 		background-color: grey;
-		width: 800px;
+		width: 750px;
 		height: 80px;
 		display:block;
 		margin-left: auto;
@@ -17,11 +17,11 @@
 		padding-right:15px;
 	}
 	
-	.button-style 
+	.button-style
 	{
-		padding: 10px;
-		margin-left: auto;
-		margin-right: auto;
+		padding: 15px;
+		margin-left: 35px;
+		margin-right: 35px;
 		border: black 2px solid;
 		cursor: pointer;
 	}
@@ -88,7 +88,7 @@
 	</head>
 
 	<body style="background-color:#33475b;">
-	<h1 style="font-size: xx-large; text-align: center; color:white;">Dashboard</h1>
+	<h1 style="text-align: center; color:white;">Dashboard</h1>
     	<br>
 		<div class="div-style">
     	<p class="text-style">
