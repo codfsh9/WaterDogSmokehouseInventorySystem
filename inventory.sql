@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 12, 2021 at 08:05 PM
+-- Generation Time: Nov 12, 2021 at 08:13 PM
 -- Server version: 5.6.37
 -- PHP Version: 5.6.31
 
@@ -39,11 +39,11 @@ CREATE TABLE IF NOT EXISTS `ingredients` (
 --
 
 INSERT INTO `ingredients` (`ing_id`, `ing_name`, `ing_desc`, `ing_q`, `ing_q_max`) VALUES
-(1, 'Plain Bagel', 'N/A', 50, 0),
-(2, '\r\nSesame Bagel', 'N/A', 50, 0),
-(3, 'Poppy Bagel', 'Bagel w/ poppy seeds', 50, 0),
-(4, 'Salt Bagel', 'N/A', 40, 0),
-(5, 'Honey Oat Bagel', 'N/A', 50, 0);
+(1, 'Plain Bagel', 'N/A', 50, 50),
+(2, '\r\nSesame Bagel', 'N/A', 50, 50),
+(3, 'Poppy Bagel', 'Bagel w/ poppy seeds', 50, 50),
+(4, 'Salt Bagel', 'N/A', 40, 50),
+(5, 'Honey Oat Bagel', 'N/A', 50, 50);
 
 -- --------------------------------------------------------
 
