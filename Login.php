@@ -4,11 +4,11 @@
 		<?php
 		$servername = "localhost";
 		$username = "root";
+		$password = "root";
 		$dbname = "inventory";
 
 		$myusername = $_POST["username"];
 		$mypassword= $_POST["password"];
-
 
 		$conn = new mysqli($servername, $username, $password, $dbname);
 		// Check connection
@@ -16,8 +16,6 @@
 		if (!$conn) {
 		    die("Connection failed: " . mysqli_connect_error());
 		}
-
-
 
 		$sql = "SELECT * FROM users WHERE username = '$myusername' and password = '$mypassword'";
 
@@ -32,7 +30,7 @@
 			if (!isset($_SESSION['row'])) {  
 	
     		$_SESSION['row'] = $row;        
-    		header("location: MainPage.html");
+    		header("location: MainPage.php");
 			}
 
 	
@@ -40,10 +38,7 @@
 		    echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 
-
 		$conn->close();
-
-
 
 		?>
 	</body>
