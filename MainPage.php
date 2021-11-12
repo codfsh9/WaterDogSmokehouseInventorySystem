@@ -44,18 +44,21 @@
     {
         background-color: white;
         font-size: 20px;
-        padding-left:25px;
-        padding-right:25px;
+        padding-left:auto;
+        padding-right:auto;
         color: black;
     }
     tr
     {
         background-color:white;
+		text-align:center;
         font-size:15px;
+		padding:20px;
     }
     tr:nth-child(even)
     {
-        background-color: #f2f2f2;
+        background-color:rgb(199, 199, 199);
+		text-align:center;
         font-size: 15px;
         padding:20px;
     }
@@ -74,7 +77,7 @@
 	</head>
 
 	<body style="background-color:#33475b;">
-	<h1 style="font-size: xx-large; text-align: center;">Dashboard</h1>
+	<h1 style="font-size: xx-large; text-align: center; color:white;">Dashboard</h1>
     	<br>
 		<div class="div-style">
     	<p class="text-style">
