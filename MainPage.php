@@ -122,6 +122,5 @@
 			mysqli_close($conn);
 		?>
 		</table>
-		</div>
 	</body>
 </html>
