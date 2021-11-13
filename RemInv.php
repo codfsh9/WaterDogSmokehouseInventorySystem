@@ -64,10 +64,6 @@
 <input type="text" name="ingredientid" required placeholder="Please Enter Ingredient ID"/><br><br>
 <label>Ingredient Name:</label>
 <input type="text" name="ingredientname" required placeholder="Please Enter Ingredient Name"/><br><br>
-<label>Description:</label>
-<input type="text" name="description" required placeholder="Please Enter Ingredient Description"/><br><br>
-<label>Quantity:</label>
-<input type="number" name="quantity" required placeholder="Please Enter Ingredient Quantity"/><br><br>
 
 <input type="submit" value=" Submit " name="submit"/><br />
 	
@@ -83,13 +79,13 @@ if(isset($_POST["submit"]))
 include 'dbconfig.php';
 
 $sql = "DELETE FROM ingredients 
-WHERE ing_id='".$_POST["ingredientid"]."'";
+WHERE ing_id='".$_POST["ingredientid"]."' or ing_name = '".$_POST["ingredientname"]."'";
 
 if ($conn->query($sql) === TRUE) 
 {
 echo "
     <script type= 'text/javascript'>
-        alert('New record created successfully');
+        alert('".$_POST["ingredientname"]."' + ' successfully deleted');
     </script>";
 } 
 else 
