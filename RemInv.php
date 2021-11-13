@@ -47,7 +47,7 @@
 </head>
 
 <body style="background-color:#33475b;">
-<h1 style="font-size: xx-large; text-align: center; color:white;">Add Inventory Page</h1>
+<h1 style="font-size: xx-large; text-align: center; color:white;">Remove Inventory Page</h1>
     <br>
     <p>
         <button onclick="window.location.href='MainPage.php'">
@@ -57,8 +57,8 @@
     <!doctype html>
 <html>
 
-<div id="addnewinventory">
-<h2>Add New Inventory Item</h2>
+<div id="removeinventory">
+<h2>Remove Inventory Item</h2>
 <form action="" method="post">
 <label>Ingredient ID:</label>
 <input type="text" name="ingredientid" required placeholder="Please Enter Ingredient ID"/><br><br>
@@ -83,7 +83,7 @@ if(isset($_POST["submit"]))
 include 'dbconfig.php';
 
 $sql = "DELETE FROM ingredients 
-WHERE ing_id=ingredientid";
+WHERE ing_id='".$_POST["ingredientid"]."'";
 
 if ($conn->query($sql) === TRUE) 
 {
