@@ -1,8 +1,16 @@
 <!doctype html>
 <html>
+<body style="background-color:#33475b;">
 
 <div id="addnewinventory">
-<h2>Add New Inventory Item</h2>
+<h2 style="font-size: xx-large; text-align: center; color:white;">Add Inventory Page</h2>
+<br>
+    <p>
+        <button onclick="window.location.href='MainPage.php'">
+        Back to Homepage
+        </button>
+    </p>
+
 <form action="" method="post">
 <label>Ingredient ID:</label>
 <input type="text" name="ingredientid" required placeholder="Please Enter Ingredient ID"/><br><br>
@@ -19,6 +27,7 @@
 	
 </div>
 	
+</body>	
 </html>
 
 <?php
