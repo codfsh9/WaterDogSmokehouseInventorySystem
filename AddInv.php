@@ -6,18 +6,21 @@
     <style>
     div
     {
-        background-color: white;
-        border: black 2px solid;
-        width:700px; 
-        height:500px;
-        margin-left:auto;
-        margin-right:auto;
+    background-color: #E3E3E3;
+    border: black 2px solid;
+    width: 700px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     }
-</style>
+    </style>
 </head>
 
 <body style="background-color:#33475b;">
-<h1 style="font-size: xx-large; text-align: center; color:white;">Add Inventory Page</h1>
+<h1 style="text-align:center; color:white; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
+	Add Inventory Page
+</h1>
     <br>
     <p>
         <button onclick="window.location.href='MainPage.php'">
@@ -28,7 +31,10 @@
 <html>
 
 <div id="addnewinventory">
-<h2>Add New Inventory Item</h2>
+<h2 style="text-align:center; color:black; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
+	Add New Inventory Item
+</h2>
+	
 <form action="" method="post">
 <label>Ingredient ID:</label>
 <input type="text" name="ingredientid" required placeholder="Please Enter Ingredient ID"/><br><br>
