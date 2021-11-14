@@ -5,91 +5,135 @@
 		
 	.div-style 
 	{
-		background-color: grey;
+		background-color:lightgrey;
 		width: 750px;
 		height: 80px;
 		display:block;
 		margin-left: auto;
 		margin-right: auto;
-		padding-top:10px;
-		padding-bottom:10px;
-		padding-left:15px;
-		padding-right:15px;
+		padding:10px;
 	}
 	
 	.button-style
 	{
+		display:inline-block;
+		background-color:lightgrey;
+		font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
 		padding: 15px;
 		margin-left: 35px;
 		margin-right: 35px;
-		border: black 2px solid;
+		margin-bottom:20px;
+		border-top-style: none;
+  		border-right-style: none;
+  		border-bottom-style: solid;
+ 		border-left-style: none;
+		border-color:black;
 		cursor: pointer;
+	}
+
+	.button-style:hover
+	{
+		background-color:black;
+		color:white;
 	}
 	
 	.text-style
 	{
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
-    text-align:center;
+    	font-size:large;
+    	font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    	text-align:center;
 	}
 
 	table
     {
         border-collapse: separate;
-        width: 800px;
-        height: 500px;
-        padding:10px;
+        width: 100%;
+        height: 150%;
+        padding:20px;
         margin-left: auto;
         margin-right: auto;
         font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-        text-align: left;
+        text-align: center;
     }
 
     th
     {
         background-color: white;
-        font-size: large;
-		height: fit-content;
-        padding-left:auto;
-        padding-right:auto;
+        font-size: x-large;
+		height: 50px;
+		width:60px;
+        padding:10px;
         color: black;
+		position: sticky;
+      	top: 0;
     }
 
     tr
     {
         background-color:white;
 		text-align:center;
-		height: fit-content;
-        font-size:15px;
-		padding:5px;
+        font-size:medium;
+		padding:10px;
     }
 
     tr:nth-child(even)
     {
         background-color:rgb(199, 199, 199);
 		text-align:center;
-		height: fit-content;
-        font-size: 15px;
+        font-size: medium;
         padding:10px;
     }
 
     .div-style2
     {
         background-color: #33475b;
-        border: black 2px solid;
-        width:700px; 
-        height:500px;
+        width:50%; 
+        height:65%;
         margin-left:auto;
         margin-right:auto;
+		overflow-y:scroll;
     }
+
+	.logout-style
+	{
+		font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+		font-size: large;
+		background-color: lightgrey;
+		border: solid 2px black;
+		cursor: pointer;
+		padding:10px;
+		margin-top:50px;
+		margin-left:900px;
+		margin-right:auto;
+	}
+
+	.logout-style:hover
+	{
+		background-color:black;
+		color:white;
+	}
+
+	.img-style 
+	{
+		width: 310px; 
+		height: 220px;
+		position:fixed; 
+		top:0; 
+		left:0;
+	}
 
 	</style>
 	
 	</head>
 
 	<body style="background-color:#33475b;">
-	<h1 style="text-align: center; color:white;">Dashboard</h1>
+	<h1 style="text-align:center; color:white; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
+	<img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png"/>
+		Dashboard
+	</h1>
+
     	<br>
+
 		<div class="div-style">
     	<p class="text-style">
         	<button onclick="window.location.href='AddInv.php'" class="button-style">
@@ -103,6 +147,7 @@
        		</button>
     	</p>
 		</div>
+		<div class="div-style2">
 		<table>
 			<tr>
 				<th>Ingredient ID</th>
@@ -137,5 +182,7 @@
 			mysqli_close($conn);
 		?>
 		</table>
+		</div>
+		<button onclick="window.location.href='Logout.php'" class="logout-style">Logout</button>
 	</body>
 </html>
