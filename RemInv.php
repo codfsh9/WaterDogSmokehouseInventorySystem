@@ -1,76 +1,77 @@
-<!DOCTYPE html>
 <html>
 <head>
-    
     <title></title>
-    <style>
-    table
-    {
-        border-collapse: separate;
-        width: auto;
-        height: auto;
-        padding:10px;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-        text-align: left;
-    }
-    th
-    {
-        background-color: white;
-        font-size: 20px;
-        padding-left:25px;
-        padding-right:25px;
-        color: black;
-    }
-    tr
-    {
-        background-color:white;
-        font-size:15px;
-    }
-    tr:nth-child(even)
-    {
-        background-color: #f2f2f2;
-        font-size: 15px;
-        padding:20px;
-    }
-    div
-    {
-        background-color: #33475b;
-        border: black 2px solid;
-        width:700px; 
-        height:500px;
-        margin-left:auto;
-        margin-right:auto;
-    }
+<style>
+.div-style
+{
+    background-color: white;
+    border: black 2px solid;
+    width:700px; 
+    height:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h2
+{
+    text-align:center;
+}
+
+label
+{
+    padding:15px;
+    margin-left:200px;
+    text-align:center;
+}
+
+.button-style1
+{
+    display:inline-block;
+    font-size:medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    text-align:center;
+    padding:10px;
+    margin-top:25px;
+    margin-left:75px;
+    margin-right:60px;
+    cursor:pointer;
+}
+
+.button-style2
+{
+    display:inline-block;
+    font-size:medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    text-align:center;
+    padding:10px;
+    margin-top:25px;
+    margin-right:50px;
+    cursor:pointer;
+}
 </style>
 </head>
 
 <body style="background-color:#33475b;">
-<h1 style="font-size: xx-large; text-align: center; color:white;">Remove Inventory Page</h1>
-    <br>
-    <p>
-        <button onclick="window.location.href='MainPage.php'">
-        Back to Homepage
-        </button>
-    </p>
-    <!doctype html>
-<html>
-
-<div id="removeinventory">
-<h2>Remove Inventory Item</h2>
+<h1 style="font-size: xx-large; text-align: center; color:white;">Remove Inventory</h1>
+<br>
+<div id="removeinventory" class="div-style">
+<h2 style="font-size: x-large; text-align: center; padding-bottom:10px;">Enter Contents Below</h2>
 <form action="" method="post">
-<label>Ingredient ID:</label>
-<input type="text" name="ingredientid" required placeholder="Please Enter Ingredient ID"/><br><br>
-<label>Ingredient Name:</label>
-<input type="text" name="ingredientname" required placeholder="Please Enter Ingredient Name"/><br><br>
 
-<input type="submit" value=" Submit " name="submit"/><br />
-	
+<label>Ingredient ID:</label>
+<input type="text" name="ingredientid" required placeholder="Enter Ingredient ID"/><br><br>
+
+<label>Ingredient Name:</label>
+<input type="text" name="ingredientname" required placeholder="Enter Ingredient Name"/><br><br>
+
+<button onclick="window.location.href='MainPage.php'" class="button-style1">
+<-- Back to Homepage
+</button>
+
+<input type="submit" value=" Remove " name="submit" class="button-style2">
 </form>
 	
 </div>
-	
 </html>
 
 <?php

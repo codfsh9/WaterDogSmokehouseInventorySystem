@@ -128,7 +128,7 @@
 
 	<body style="background-color:#33475b;">
 	<h1 style="text-align:center; color:white; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
-	<img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png"/>
+	<img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" alt="Waterdog Smokehouse Logo"/>
 		Dashboard
 	</h1>
 

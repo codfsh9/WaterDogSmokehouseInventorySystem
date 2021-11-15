@@ -49,8 +49,9 @@
 <body style="background-color:#33475b;">
 <h1 style="font-size: xx-large; text-align: center; color:white">Supplier Info Page</h1>
     <br>
+    <h2 style="text-align:center;"> Not yet Available </h2>
     <p>
-        <button onclick="window.location.href='MainPage.php'">
+        <button onclick="window.location.href='MainPage.php'" style="margin-left:45%;">
         Back to Homepage
         </button>
     </p>       
