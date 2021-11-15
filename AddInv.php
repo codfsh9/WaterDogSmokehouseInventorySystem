@@ -5,12 +5,13 @@
     <style>
     .div-style
     {
-        background-color: white;
-        border: black 2px solid;
-        width:700px; 
-        height:500px;
-        margin-left:auto;
-        margin-right:auto;
+    background-color: #E3E3E3;
+    border: black 2px solid;
+    width: 700px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     }
 
     h2
