@@ -1,53 +1,55 @@
 <html>
 <head>
+    
     <title></title>
-<style>
-.div-style
-{
-    background-color: white;
+    <style>
+    .div-style
+    {
+    background-color: #E3E3E3;
     border: black 2px solid;
-    width:700px; 
-    height:500px;
-    margin-left:auto;
-    margin-right:auto;
-}
+    width: 700px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
 
-h2
-{
-    text-align:center;
-}
+    h2
+    {
+        text-align:center;
+    }
 
-label
-{
-    padding:15px;
-    margin-left:200px;
-    text-align:center;
-}
+    label
+    {
+        padding:15px;
+        margin-left:50px;
+        text-align:center;
+    }
 
-.button-style1
-{
-    display:inline-block;
-    font-size:medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
-    text-align:center;
-    padding:10px;
-    margin-top:25px;
-    margin-left:75px;
-    margin-right:60px;
-    cursor:pointer;
-}
+    .button-style1
+    {
+        display:inline-block;
+        font-size:medium;
+    	font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    	text-align:center;
+        padding:10px;
+        margin-top:25px;
+        margin-left:75px;
+        margin-right:60px;
+        cursor:pointer;
+    }
 
-.button-style2
-{
-    display:inline-block;
-    font-size:medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
-    text-align:center;
-    padding:10px;
-    margin-top:25px;
-    margin-right:50px;
-    cursor:pointer;
-}
+    .button-style2
+    {
+        display:inline-block;
+        font-size:medium;
+    	font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    	text-align:center;
+        padding:10px;
+        margin-top:25px;
+        margin-right:50px;
+        cursor:pointer;
+    }
 </style>
 </head>
 
@@ -70,7 +72,6 @@ label
 
 <input type="submit" value=" Remove " name="submit" class="button-style2">
 </form>
-	
 </div>
 </html>
 

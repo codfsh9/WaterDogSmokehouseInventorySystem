@@ -18,7 +18,6 @@
 	{
 		display:inline-block;
 		background-color:lightgrey;
-		font-size: large;
 		font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
 		padding: 15px;
 		margin-left: 35px;
@@ -87,13 +86,12 @@
 
     .div-style2
     {
-    background-color: #33475b;
-    width: 50%;
-    height: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-y: scroll;
-    margin-top: 20px;
+        background-color: #33475b;
+        width:50%; 
+        height:65%;
+        margin-left:auto;
+        margin-right:auto;
+		overflow-y:scroll;
     }
 
 	.logout-style
@@ -105,15 +103,14 @@
 		cursor: pointer;
 		padding:10px;
 		margin-top:50px;
-		margin-left:50%;
+		margin-left:900px;
 		margin-right:auto;
 	}
 
 	.logout-style:hover
 	{
-    background-color: black;
-    color: white;
-    text-align: center;
+		background-color:black;
+		color:white;
 	}
 
 	.img-style 
@@ -151,7 +148,7 @@
     	</p>
 		</div>
 		<div class="div-style2">
-		<table align="center">
+		<table>
 			<tr>
 				<th>Ingredient ID</th>
 				<th>Name</th>

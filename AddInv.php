@@ -8,7 +8,7 @@
     background-color: #E3E3E3;
     border: black 2px solid;
     width: 700px;
-    height: 300px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -22,7 +22,7 @@
     label
     {
         padding:15px;
-        margin-left:200px;
+        margin-left:50px;
         text-align:center;
     }
 
