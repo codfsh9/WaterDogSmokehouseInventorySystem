@@ -16,25 +16,29 @@
 	
 	.button-style
 	{
-		display:inline-block;
-		background-color:lightgrey;
-		font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
-		padding: 15px;
-		margin-left: 35px;
-		margin-right: 35px;
-		margin-bottom:20px;
-		border-top-style: none;
-  		border-right-style: none;
-  		border-bottom-style: solid;
- 		border-left-style: none;
-		border-color:black;
-		cursor: pointer;
+    display: inline-block;
+    background-color: #D3D3D3;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    font-size: large;
+    padding: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 25%;
+    margin-top: 0%;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color: black;
+    cursor: pointer;
 	}
 
 	.button-style:hover
 	{
-		background-color:black;
-		color:white;
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
 	}
 	
 	.text-style
@@ -86,25 +90,26 @@
 
     .div-style2
     {
-        background-color: #33475b;
-        width:50%; 
-        height:65%;
-        margin-left:auto;
-        margin-right:auto;
-		overflow-y:scroll;
+    background-color: #33475b;
+    width: 50%;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    margin-top: 50px;
     }
 
 	.logout-style
 	{
-		font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-		font-size: large;
-		background-color: lightgrey;
-		border: solid 2px black;
-		cursor: pointer;
-		padding:10px;
-		margin-top:50px;
-		margin-left:900px;
-		margin-right:auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-color: lightgrey;
+    border: solid 2px black;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 50%;
+    margin-right: auto;
 	}
 
 	.logout-style:hover
@@ -115,11 +120,11 @@
 
 	.img-style 
 	{
-		width: 310px; 
-		height: 220px;
-		position:fixed; 
-		top:0; 
-		left:0;
+    width: 310px;
+    height: 220px;
+    position: fixed;
+    top: 20px;
+    left: 0px;
 	}
 
 	</style>
@@ -127,12 +132,12 @@
 	</head>
 
 	<body style="background-color:#33475b;">
-	<h1 style="text-align:center; color:white; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
-	<img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" alt="Waterdog Smokehouse Logo"/>
-		Dashboard
+	<h1 style="text-align:center; color:white; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;"> <img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" alt="Waterdog Smokehouse Logo"></h1>
+	<h1 style="text-align: center; color: white; font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; padding-top: 20;"> 
+		Dashboard 
 	</h1>
-
-    	<br>
+		
+	<br>
 
 		<div class="div-style">
     	<p class="text-style">

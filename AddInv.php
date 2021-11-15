@@ -16,7 +16,8 @@
 
     h2
     {
-        text-align:center;
+    text-align: center;
+    padding-bottom: 20;
     }
 
     label
@@ -50,33 +51,38 @@
         margin-right:50px;
         cursor:pointer;
     }
-</style>
+    </style>
 </head>
 
 <body style="background-color:#33475b;">
-<h1 style="font-size: xx-large; text-align: center; color:white;">Add Inventory</h1>
+<h1 style="text-align: center; color: white; font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; padding-top: 20;">
+	Add Inventory
+</h1>
 <br>
 <div id="addnewinventory" class="div-style">
-<h2 style="font-size: x-large; text-align: center; padding-bottom:10px;">Enter Contents Below</h2>
+<h2 style="text-align:center; color:black; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
+	Enter Contents Below
+</h2>
+	
 <form action="" method="post">
 
-<label>Ingredient ID:</label>
+<label style="font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">Ingredient ID:</label>
 <input type="text" name="ingredientid" required placeholder="Enter Ingredient ID"/><br><br>
 
-<label>Ingredient Name:</label>
+<label style="font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">Ingredient Name:</label>
 <input type="text" name="ingredientname" required placeholder="Enter Ingredient Name"/><br><br>
 
-<label>Description:</label>
+<label style="font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">Description:</label>
 <input type="text" name="description" required placeholder="Enter Ingredient Description"/><br><br>
 
-<label>Quantity:</label>
+<label style="font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">Quantity:</label>
 <input type="number" name="quantity" required placeholder="Enter Ingredient Quantity"/><br><br>
 
-<label>Quantity-Max:</label>
+<label style="font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">Quantity-Max:</label>
 <input type="number" name="quantity-max" required placeholder="Enter Ingredient Quantity Max"/><br><br>
 
 <button onclick="window.location.href='MainPage.php'" class="button-style1">
-<-- Back to Homepage
+< Back to Homepage
 </button>
 
 <input type="submit" value=" Add " name="submit" class="button-style2">
