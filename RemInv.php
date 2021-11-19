@@ -75,7 +75,7 @@
 <input type="text" name="ingredientname" required placeholder="Enter Ingredient Name"/><br><br>
 
 <button onclick="window.location.href='MainPage.php'" class="button-style1">
-< Back to Homepage
+ Back to Homepage
 </button>
 
 <input type="submit" value=" Remove " name="submit" class="button-style2">
@@ -110,4 +110,4 @@ if(isset($_POST["submit"]))
 }
 ?>
 </body>
-</html>
+
