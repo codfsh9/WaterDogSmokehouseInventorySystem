@@ -73,7 +73,7 @@
 <input type="text" name="ingredientname" required placeholder="Enter Ingredient Name"/><br><br>
 
 <label style="font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">Description:</label>
-<input type="text" name="description" required placeholder="Enter Ingredient Description"/><br><br>
+<input type="text" name="description" placeholder="Enter Ingredient Description"/><br><br>
 
 <label style="font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">Quantity:</label>
 <input type="number" name="quantity" required placeholder="Enter Ingredient Quantity"/><br><br>
@@ -93,6 +93,7 @@
 <?php
 if(isset($_POST["submit"]))
 {
+header("Location: mainpage.php");
 include 'dbconfig.php';
 
 $sql = "INSERT INTO ingredients (ing_id, ing_name, ing_desc, ing_q, ing_q_max)
