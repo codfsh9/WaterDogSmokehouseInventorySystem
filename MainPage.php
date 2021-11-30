@@ -1,159 +1,159 @@
 <html>
-	<head>
-	
+
+<head>
+	<title>Inventory Dashboard</title>
 	<style type="text/css">
-		
-	.div-style 
-	{
-		background-color:lightgrey;
-		width: 750px;
-		height: 80px;
-		display:block;
-		margin-left: auto;
-		margin-right: auto;
-		padding:10px;
-	}
-	
-	.button-style
-	{
-    display: inline-block;
-    background-color: #D3D3D3;
-    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
-    font-size: large;
-    padding: 15px;
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-bottom: 25%;
-    margin-top: 0%;
-    border-top-style: none;
-    border-right-style: none;
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-color: black;
-    cursor: pointer;
-	}
+		.div-style {
+			background-color: lightgrey;
+			width: 750px;
+			height: 80px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+		}
 
-	.button-style:hover
-	{
-    background-color: black;
-    color: white;
-    margin-bottom: 0px;
-    margin-top: 0px;
-	}
-	
-	.text-style
-	{
-    	font-size:large;
-    	font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
-    	text-align:center;
-	}
+		.button-style {
+			display: inline-block;
+			background-color: #D3D3D3;
+			font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+			font-size: large;
+			padding: 15px;
+			margin-left: 35px;
+			margin-right: 35px;
+			margin-bottom: 25%;
+			margin-top: 0%;
+			border-top-style: none;
+			border-right-style: none;
+			border-bottom-style: solid;
+			border-left-style: none;
+			border-color: black;
+			cursor: pointer;
+		}
 
-	table
-    {
-        border-collapse: separate;
-        width: 100%;
-        height: 150%;
-        padding:20px;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-        text-align: center;
-    }
+		.button-style:hover {
+			background-color: black;
+			color: white;
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
 
-    th
-    {
-        background-color: white;
-        font-size: x-large;
-		height: 50px;
-		width:60px;
-        padding:10px;
-        color: black;
-		position: sticky;
-      	top: 0;
-    }
+		.text-style {
+			font-size: large;
+			font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+			text-align: center;
+		}
 
-    tr
-    {
-        background-color:white;
-		text-align:center;
-        font-size:medium;
-		padding:10px;
-    }
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			padding: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+			text-align: center;
+		}
 
-    tr:nth-child(even)
-    {
-        background-color:rgb(199, 199, 199);
-		text-align:center;
-        font-size: medium;
-        padding:10px;
-    }
+		th {
+			background-color: white;
+			font-size: x-large;
+			height: 50px;
+			width: 60px;
+			padding: 10px;
+			color: black;
+			position: sticky;
+			top: 0;
+		}
 
-    .div-style2
-    {
-    background-color: #33475b;
-    width: 50%;
-    height: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-y: scroll;
-    margin-top: 50px;
-    }
+		tr {
+			background-color: white;
+			text-align: center;
+			font-size: medium;
+			height:50px;
+			padding: 10px;
+			border-bottom: 1px solid #ddd
+		}
 
-	.logout-style
-	{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: large;
-    background-color: lightgrey;
-    border: solid 2px black;
-    cursor: pointer;
-    padding: 10px;
-    margin-top: 50px;
-    margin-left: 50%;
-    margin-right: auto;
-	}
+		tr:nth-child(even) {
+			background-color: rgb(199, 199, 199);
+			text-align: center;
+			font-size: medium;
+			height:50px;
+			padding: 10px;
+		}
 
-	.logout-style:hover
-	{
-		background-color:black;
-		color:white;
-	}
+		.div-style2 {
+			background-color: #33475b;
+			width: 50%;
+			height: 65%;
+			margin-left: auto;
+			margin-right: auto;
+			overflow-y: scroll;
+			margin-top: 50px;
+		}
 
-	.img-style 
-	{
-    width: 310px;
-    height: 220px;
-    position: fixed;
-    top: 20px;
-    left: 0px;
-	}
+		.logout-style {
+			font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+			font-size: large;
+			background-color: lightgrey;
+			border: solid 2px black;
+			cursor: pointer;
+			padding: 10px;
+			margin-top: 50px;
+			margin-left: 50%;
+			margin-right: auto;
+		}
 
+		.logout-style:hover {
+			background-color: black;
+			color: white;
+		}
+
+		.img-style {
+			width: 310px;
+			height: 220px;
+			position: fixed;
+			top: 20px;
+			left: 0px;
+		}
+
+		#myInput {
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			width: 35%;
+			font-size: 16px;
+			padding: 12px 20px 12px 40px;
+			border: 1px solid #ddd;
+			margin-bottom: 12px;
+		}
 	</style>
-	
-	</head>
+</head>
 
-	<body style="background-color:#33475b;">
-	<h1 style="text-align:center; color:white; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;"> <img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" alt="Waterdog Smokehouse Logo"></h1>
-	<h1 style="text-align: center; color: white; font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; padding-top: 20;"> 
-		Dashboard 
+<body style="background-color:#33475b;">
+	<h1 style="text-align:center; color:white; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;"> 
+	<img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" alt="Waterdog Smokehouse Logo"></h1>
+	<h1 style="text-align: center; color: white; font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; padding-top: 10;">
+		Dashboard
 	</h1>
-		
+
 	<br>
 
-		<div class="div-style">
-    	<p class="text-style">
-        	<button onclick="window.location.href='AddInv.php'" class="button-style">
-       		Add Inventory
-        	</button>
-        	<button onclick="window.location.href='RemInv.php'" class="button-style">
-       		Remove Inventory
-        	</button>
-        	<button onclick="window.location.href='ViewSupp.php'" class="button-style">
-       		Supplier Information
-       		</button>
-    	</p>
-		</div>
-		<div class="div-style2">
-		<table>
+	<div class="div-style">
+		<p class="text-style">
+			<button onclick="window.location.href='AddInv.php'" class="button-style">
+				Add Inventory
+			</button>
+			<button onclick="window.location.href='RemInv.php'" class="button-style">
+				Remove Inventory
+			</button>
+			<button onclick="window.location.href='ViewSupp.php'" class="button-style">
+				Supplier Information
+			</button>
+		</p>
+	</div>
+	<div class="div-style2">
+	<input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search for item.." title="Type in a name">
+		<table id="myTable">
 			<tr>
 				<th>Ingredient ID</th>
 				<th>Name</th>
@@ -161,33 +161,50 @@
 				<th>Quantity</th>
 				<th>Quantity Max</th>
 			</tr>
-		<?php
-			$conn=mysqli_connect("localhost","root","root","inventory");
-			 // Check connection
-			 if (mysqli_connect_errno())
-			 {
-			 echo "Failed to connect: " . mysqli_connect_error();
+			<?php
+			$conn = mysqli_connect("localhost", "root", "root", "inventory");
+			// Check connection
+			if (mysqli_connect_errno()) {
+				echo "Failed to connect: " . mysqli_connect_error();
 			}
-			
+
 			$sql = "SELECT * FROM ingredients";
 			$result = $conn->query($sql);
-		
+
 			if ($result->num_rows > 0) {
-				while($row = $result->fetch_assoc())
-				{
-					echo "<tr><td>" . $row["ing_id"]. "</td><td>" . $row["ing_name"] . "</td><td>"
-					. $row["ing_desc"]. "</td><td>" . $row["ing_q"] . "</td><td>" . $row["ing_q_max"] . "</tr></td>";
+				while ($row = $result->fetch_assoc()) {
+					echo "<tr><td>" . $row["ing_id"] . "</td><td>" . $row["ing_name"] . "</td><td>"
+						. $row["ing_desc"] . "</td><td>" . $row["ing_q"] . "</td><td>" . $row["ing_q_max"] . "</tr></td>";
 				}
 				echo "</table>";
-			}
-			else 
-			{
+			} else {
 				echo "0 RESULTS";
 			}
 			mysqli_close($conn);
-		?>
+			?>
 		</table>
-		</div>
-		<button onclick="window.location.href='Logout.php'" class="logout-style">Logout</button>
-	</body>
+	</div>
+	<button onclick="window.location.href='Logout.php'" class="logout-style">Logout</button>
+
+	<script>
+		function searchFunction() {
+			var input, filter, table, tr, td, i, txtValue;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td")[1];
+				if (td) {
+					txtValue = td.textContent || td.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						tr[i].style.display = "";
+					} else {
+						tr[i].style.display = "none";
+					}
+				}
+			}
+		}
+	</script>
+</body>
 </html>
