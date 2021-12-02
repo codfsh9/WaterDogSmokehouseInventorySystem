@@ -48,12 +48,38 @@
 
 <body style="background-color:#33475b;">
 <h1 style="font-size: xx-large; text-align: center; color:white">Supplier Info Page</h1>
-    <br>
-    <h2 style="text-align:center;"> Not yet Available </h2>
     <p>
         <button onclick="window.location.href='MainPage.php'" style="margin-left:45%;">
         Back to Homepage
         </button>
-    </p>       
+    </p>
+    <table id="suppTable">
+		<tr>
+			<th>Supplier ID</th>
+			<th>Name</th>
+	    	<th>Phone Number</th>
+			<th>Email</th>
+		</tr>
+        <?php
+        $conn = mysqli_connect("localhost", "root", "root", "inventory");
+        
+        if (mysqli_connect_errno()) {
+            echo "Failed to connect: " . mysqli_connect_error();
+        }
+
+        $sql = "SELECT * FROM suppInfo";
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                echo "<tr><td>" . $row["supp_id"] . "</td><td>" . $row["supp_name"] . "</td><td>"
+                . $row["supp_num"] . "</td><td>" . $row["supp_email"] . "</td>";
+            }
+            echo "</table>";
+        } else {
+            echo "0 RESULTS";
+        }
+        mysqli_close($conn);
+        ?>
 </body>
 </html>
