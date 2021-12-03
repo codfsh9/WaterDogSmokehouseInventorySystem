@@ -308,25 +308,31 @@
 
 <body style="background-color:#33475b;">
 	<h1 style="text-align:center; color:white; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
-		<img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" alt="Waterdog Smokehouse Logo">
+		<img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" alt="Waterdog Smokehouse Logo" style="left: 0px; top: 0px">
 	</h1>
 	<h1 style="text-align: center; color: white; font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; padding-top: 10;">
 		Dashboard
 	</h1>
 
 	<br>
-
+	
 	<div class="div-style">
 		<p class="text-style">
 			<button class="button-style" href="#addModal">
-				Add Inventory
+				Add
 			</button>
 			<button class="button-style" href="#removeModal">
-				Remove Inventory
+				Remove
 			</button>
+			
 			<button onclick="window.location.href='ViewSupp.php'" class="viewSupp-button-style">
 				Supplier Information
 			</button>
+			<button onclick="window.location.href='MainPage.php'" class="button-style">
+				Refresh
+			</button>
+
+			
 		</p>
 	</div>
 	<div class="div-style2">
@@ -348,7 +354,6 @@
 
 			$sql = "SELECT * FROM ingredients";
 			$result = $conn->query($sql);
-
 			if ($result->num_rows > 0) {
 				while ($row = $result->fetch_assoc()) {
 					echo "<tr><td>" . $row["ing_id"] . "</td><td>" . $row["ing_name"] . "</td><td>"
@@ -411,7 +416,9 @@
 
 				if ($conn->query($sql) === TRUE) {
 					echo " <script type= 'text/javascript'>
-					alert('New item added successfully');
+										alert('New item added successfully');
+										
+										
 					</script>";
 				} else {
 					echo
@@ -419,7 +426,6 @@
         			alert('Error: " . $sql . "<br>" . $conn->error . "');
     				</script>";
 				}
-
 				$conn->close();
 			}
 			?>
@@ -460,8 +466,11 @@
 			</div>
 			<?php
 			if (isset($_POST["submit2"])) {
+			
+			include 'dbconfig.php';
 	
-				$sql = "DELETE FROM ingredients WHERE ing_id='" . $_POST["ingredientid"] . "' or ing_name = '" . $_POST["ingredientname"] . "'";
+				$sql = "DELETE FROM ingredients 
+				WHERE ing_id='" . $_POST["ingredientid"] . "' or ing_name = '" . $_POST["ingredientname"] . "'";
 
 				if ($conn->query($sql) === TRUE) {
 					echo
@@ -545,6 +554,12 @@
 			}
 		}
 	</script>
+	<script>
+	function Reload(){
+		window.location.reload();
+		}
+		</script>
+
 </body>
 
 </html>
