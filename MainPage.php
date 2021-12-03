@@ -308,31 +308,25 @@
 
 <body style="background-color:#33475b;">
 	<h1 style="text-align:center; color:white; font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
-		<img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" alt="Waterdog Smokehouse Logo" style="left: 0px; top: 0px">
+		<img class="img-style" src="https://www.waterdogsmokehouse.com/wp-content/uploads/2019/12/WATERDOG_LOGO_K1665-4.png" alt="Waterdog Smokehouse Logo">
 	</h1>
 	<h1 style="text-align: center; color: white; font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; padding-top: 10;">
 		Dashboard
 	</h1>
 
 	<br>
-	
+
 	<div class="div-style">
 		<p class="text-style">
 			<button class="button-style" href="#addModal">
-				Add
+				Add Inventory
 			</button>
 			<button class="button-style" href="#removeModal">
-				Remove
+				Remove Inventory
 			</button>
-			
 			<button onclick="window.location.href='ViewSupp.php'" class="viewSupp-button-style">
 				Supplier Information
 			</button>
-			<button onclick="window.location.href='MainPage.php'" class="button-style">
-				Refresh
-			</button>
-
-			
 		</p>
 	</div>
 	<div class="div-style2">
@@ -354,6 +348,7 @@
 
 			$sql = "SELECT * FROM ingredients";
 			$result = $conn->query($sql);
+
 			if ($result->num_rows > 0) {
 				while ($row = $result->fetch_assoc()) {
 					echo "<tr><td>" . $row["ing_id"] . "</td><td>" . $row["ing_name"] . "</td><td>"
@@ -402,6 +397,7 @@
 							<input type="number" name="quantity-max" required placeholder="Enter Ingredient Quantity Max" /><br><br>
 
 							<input type="submit" value=" Add " name="submit1" class="add-button-style">
+
 						</form>
 					</div>
 				</body>
@@ -414,18 +410,22 @@
 				$sql = "INSERT INTO ingredients (ing_id, ing_name, ing_desc, ing_q, ing_q_max)
 				VALUES ('" . $_POST["ingredientid"] . "','" . $_POST["ingredientname"] . "','" . $_POST["description"] . "','" . $_POST["quantity"] . "','" . $_POST["quantity-max"] . "')";
 
-				if ($conn->query($sql) === TRUE) {
+				if ($conn->query($sql) === TRUE and $_POST) {
 					echo " <script type= 'text/javascript'>
-										alert('New item added successfully');
-										
-										
+					alert('" . $_POST["ingredientname"] . "' + ' successfully added');
 					</script>";
+
+					echo "<meta http-equiv='refresh' content='0'>";
+					
 				} else {
 					echo
 					"<script type= 'text/javascript'>
         			alert('Error: " . $sql . "<br>" . $conn->error . "');
     				</script>";
 				}
+
+				header("Location: {$_SERVER['REQUEST_URI']}", true, 303);
+
 				$conn->close();
 			}
 			?>
@@ -466,17 +466,19 @@
 			</div>
 			<?php
 			if (isset($_POST["submit2"])) {
-			
-			include 'dbconfig.php';
-	
-				$sql = "DELETE FROM ingredients 
-				WHERE ing_id='" . $_POST["ingredientid"] . "' or ing_name = '" . $_POST["ingredientname"] . "'";
+
+				include 'dbconfig.php';
+
+				$sql = "DELETE FROM ingredients WHERE ing_id='" . $_POST["ingredientid"] . "' or ing_name = '" . $_POST["ingredientname"] . "'";
 
 				if ($conn->query($sql) === TRUE) {
 					echo
 					"<script type= 'text/javascript'>
-							alert('" . $_POST["ingredientname"] . "' + ' successfully deleted');
-							</script>";
+					alert('" . $_POST["ingredientname"] . "' + ' successfully deleted');
+					</script>";
+
+					echo "<meta http-equiv='refresh' content='0'>";
+
 				} else {
 					echo
 					"<script type= 'text/javascript'>
@@ -554,12 +556,13 @@
 			}
 		}
 	</script>
+	
+	<!-- Prevents resubmission of forms when refreshing -->
 	<script>
-	function Reload(){
-		window.location.reload();
+		if (window.history.replaceState) {
+			window.history.replaceState(null, null, window.location.href);
 		}
-		</script>
-
+	</script>
 </body>
 
 </html>
