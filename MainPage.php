@@ -584,7 +584,7 @@
 
 				if ($conn->query($sql) === TRUE or $_POST) {
 					echo " <script type= 'text/javascript'>
-					alert('" . $_POST["ing_name"] . "' + ' successfully updated');
+					alert('Item " . $_POST["ing_id"] . "' + ' successfully updated');
 					</script>";
 
 					echo "<meta http-equiv='refresh' content='0'>";
