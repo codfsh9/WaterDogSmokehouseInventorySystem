@@ -6,7 +6,7 @@
 	<style type="text/css">
 		.div-style {
 			background-color: lightgrey;
-			width: 750px;
+			width: 900px;
 			height: 80px;
 			display: block;
 			margin-left: auto;
@@ -161,20 +161,33 @@
 			padding: 20px;
 			margin-left: auto;
 			margin-right: auto;
-			text-align: center;
-		}
-
-		.add-label-style {
-			padding: 15px;
-			margin-left: 50px;
-			text-align: center;
+			text-align: left;
 		}
 
 		.remove-div-style {
 			background-color: #E3E3E3;
 			border: black 2px solid;
-			width: 700px;
-			height: 300px;
+			width: 500px;
+			height: 250px;
+			padding: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+		}
+
+		.update-div-style {
+			background-color: #E3E3E3;
+			border: black 2px solid;
+			width: 500px;
+			height: 250px;
+			padding: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+		}
+
+		.add-label-style {
+			padding: 15px;
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
@@ -182,19 +195,17 @@
 
 		.remove-label-style {
 			padding: 15px;
+			margin-top: 75px;
 			margin-left: 50px;
 			text-align: center;
 		}
 
-		.remove-button-style {
-			display: inline-block;
-			font-size: medium;
-			font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+		.update-label-style {
+			padding: 15px;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
 			text-align: center;
-			padding: 10px;
-			margin-top: 25px;
-			margin-right: 50px;
-			cursor: pointer;
 		}
 
 		.add-button-style {
@@ -202,9 +213,40 @@
 			font-size: medium;
 			font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
 			text-align: center;
-			padding: 10px;
-			margin-top: 15px;
-			margin-right: 50px;
+			padding-top: 15px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 15px;
+			margin-top: 30px;
+			margin-left: 215px;
+			cursor: pointer;
+		}
+
+		.remove-button-style {
+			display: inline-block;
+			font-size: medium;
+			font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+			text-align: center;
+			padding-top: 15px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 15px;
+			margin-top: 50px;
+			margin-left: 200px;
+			cursor: pointer;
+		}
+
+		.update-button-style {
+			display: inline-block;
+			font-size: medium;
+			font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+			text-align: center;
+			padding-top: 15px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 15px;
+			margin-top: 70px;
+			margin-left: 200px;
 			cursor: pointer;
 		}
 
@@ -296,7 +338,13 @@
 
 		.remove-modal-header {
 			padding: 2px 15px;
-			background-color: #b85c5c;
+			background-color: #bd4d4d;
+			color: white;
+		}
+
+		.update-modal-header {
+			padding: 2px 15px;
+			background-color: #e2b656;
 			color: white;
 		}
 
@@ -319,10 +367,13 @@
 	<div class="div-style">
 		<p class="text-style">
 			<button class="button-style" href="#addModal">
-				Add Inventory
+				Add Item
 			</button>
 			<button class="button-style" href="#removeModal">
-				Remove Inventory
+				Remove Item
+			</button>
+			<button class="button-style" href="#updateModal">
+				Update Quantity
 			</button>
 			<button onclick="window.location.href='ViewSupp.php'" class="viewSupp-button-style">
 				Supplier Information
@@ -381,19 +432,19 @@
 					<div id="addnewinventory" class="add-div-style">
 						<form action="" method="post">
 
-							<label class="add-label">Ingredient ID:</label>
+							<label class="add-label-style">Ingredient ID:</label>
 							<input type="text" name="ingredientid" required placeholder="Enter Ingredient ID" /><br><br>
 
-							<label class="add-label">Ingredient Name:</label>
+							<label class="add-label-style">Ingredient Name:</label>
 							<input type="text" name="ingredientname" required placeholder="Enter Ingredient Name" /><br><br>
 
-							<label class="add-label">Description:</label>
+							<label class="add-label-style">Description:</label>
 							<input type="text" name="description" placeholder="(Optional)" /><br><br>
 
-							<label class="add-label">Quantity:</label>
+							<label class="add-label-style">Quantity:</label>
 							<input type="number" name="quantity" required placeholder="Enter Ingredient Quantity" /><br><br>
 
-							<label class="add-label">Quantity-Max:</label>
+							<label class="add-label-style">Quantity-Max:</label>
 							<input type="number" name="quantity-max" required placeholder="Enter Ingredient Quantity Max" /><br><br>
 
 							<input type="submit" value=" Add " name="submit1" class="add-button-style">
@@ -416,7 +467,6 @@
 					</script>";
 
 					echo "<meta http-equiv='refresh' content='0'>";
-					
 				} else {
 					echo
 					"<script type= 'text/javascript'>
@@ -449,12 +499,12 @@
 					<br>
 					<div id="removeinventory" class="remove-div-style">
 						<form action="" method="post">
-							<label style="font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
+							<label class="remove-label-style">
 								Ingredient ID:
 							</label>
 							<input type="text" name="ingredientid" required placeholder="Enter Ingredient ID" /><br><br>
 
-							<label style="font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;">
+							<label class="remove-label-style">
 								Ingredient Name:
 							</label>
 							<input type="text" name="ingredientname" required placeholder="Enter Ingredient Name" /><br><br>
@@ -478,13 +528,74 @@
 					</script>";
 
 					echo "<meta http-equiv='refresh' content='0'>";
-
 				} else {
 					echo
 					"<script type= 'text/javascript'>
 							alert('Error: " . $sql . "<br>" . $conn->error . "');
 							</script>";
 				}
+
+				$conn->close();
+			}
+			?>
+		</div>
+	</div>
+
+	<!-- The Update Modal -->
+	<div id="updateModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="update-modal-header">
+				<span class="close">&times;</span>
+				<h2 style="text-align:center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+					Update Item Quantity
+				</h2>
+			</div>
+			<br>
+			<div class="modal-body">
+
+				<body style="background-color:#33475b;">
+					<div id="updateinventory" class="update-div-style">
+						<form action="" method="post">
+
+							<label class="update-label-style"> Ingredient ID: </label>
+							<input type="text" name="ing_id" required placeholder="Enter Ingredient ID" /><br><br>
+
+							<label class="update-label-style"> Quantity: </label>
+							<input type="number" name="ing_q" required placeholder="Enter New Quantity" /><br><br>
+
+							<input type="submit" value=" Update " name="submit3" class="update-button-style">
+
+						</form>
+					</div>
+				</body>
+			</div>
+			<?php
+			if (isset($_POST["submit3"])) {
+
+				include 'dbconfig.php';
+
+				$ing_id = $_POST["ing_id"];
+				$ing_name = $_POST["ing_name"];
+				$ing_q = $_POST["ing_q"];
+
+				$sql = "UPDATE ingredients SET ing_q='$ing_q' WHERE ing_id='$ing_id'";
+
+				if ($conn->query($sql) === TRUE or $_POST) {
+					echo " <script type= 'text/javascript'>
+					alert('" . $_POST["ing_name"] . "' + ' successfully updated');
+					</script>";
+
+					echo "<meta http-equiv='refresh' content='0'>";
+				} else {
+					echo
+					"<script type= 'text/javascript'>
+        			alert('Error: " . $sql . "<br>" . $conn->error . "');
+    				</script>";
+				}
+
+				header("Location: {$_SERVER['REQUEST_URI']}", true, 303);
 
 				$conn->close();
 			}
@@ -556,7 +667,7 @@
 			}
 		}
 	</script>
-	
+
 	<!-- Prevents resubmission of forms when refreshing -->
 	<script>
 		if (window.history.replaceState) {
